@@ -27,6 +27,13 @@ jobs:
           fi
           chmod +x gradlew
 
+      - name: Create Debug Keystore
+        run: |
+          keytool -genkey -v -keystore debug.keystore \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -alias android_debug -keypass android -storepass android \
+            -dname "CN=Android Debug,O=Android,C=US"
+
       - name: Build Debug APK
         run: ./gradlew assembleDebug --no-daemon -q
         env:
