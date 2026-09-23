@@ -1,0 +1,7 @@
+{
+  "name": "Quiz Explore",
+  "description": "A JSON-driven iOS-inspired glassmorphic quiz app with interactive gameplay, timer, scoring, detailed review, statistics, and full JSON editor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
